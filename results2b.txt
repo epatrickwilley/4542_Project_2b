@@ -12,7 +12,8 @@ greedy algorithm runs in O(|e|) time.  This is achieved because the program
 sets the number of degrees for each node, and then looks at each node only
 once.  Because there are always more edges than nodes, we can ignore the
 number of nodes in the graph.  While we have to sort the degrees, 
-thee are only n entries, we can ignore this amount of time elapsed.
+there are only n entries, we can ignore this amount of time elapsed.
 Additionally, we must look through all edges again, this time comparing every
  given nodes with it's neighbors for conflicts.  This can be considered in
  our runtime, but since this adds O(|e|) time, it only adds a 2 into our runtime, which can be ignored.
+ Compared to our previous algorithm, the greedy results in far less conflicts, faster, and more efficiently. 
